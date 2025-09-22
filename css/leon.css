@@ -157,28 +157,13 @@ position: relative;
 padding:30px 0 15px 0;
   }
   .features .container{
-    min-width: 320px;
+ 
    display:grid;
-   grid-template-columns: repeat(3,30% 30% 30%);
-   column-gap: 80px;
+   grid-template-columns: repeat(auto-fill,minmax(300px, 1fr));
+  grid-gap: 20px;
   }
  
-  @media (min-width: 480px) {
-    .features .container {
-      grid-template-columns: repeat(1, 1fr);
-      column-gap: 10px;
-     
  
-    }
-  }
-  
-  @media (min-width: 768px) {
-    .features .container {
-      grid-template-columns: repeat(3, 1fr);
-      column-gap: 40px;
-    }
-  }
-
   .features .feat{
     padding:20px;
     text-align: center;
